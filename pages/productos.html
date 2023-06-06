@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF_8">
+            <title>Productos</title>
+            <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id=productos">
+                <div class="caja">
+                    <h1><img src="../img/dedd650779734d6f98a72c947a365cad.png"></h1>
+                    <h1 class="titulo-principal">Productos</h1>
+                </div>
+        </section>
+
+        <main>
+            <ul class="productos">
+                <li>
+                    <h2>Ladrillos huecos</h2>
+                    <img src="../img/ladrillo1.jpg">
+                    <p class="producto-descripcion">Del 8¨, 12¨ y 18¨</p>  
+                    <p class="producto-precio">$259.55 - $390.83 - $430.56</p>                 
+                </li>
+
+                <li>
+                    <h2>Arena en Bolson</h2>
+                    <img src="../img/bolson_arena11.jpg">
+                    <p class="producto-descripcion">x m³</p>
+                    <p class="producto-precio">$7500.00</p>                   
+                </li> 
+
+                <li>
+                    <h2>Piedra en Bolson</h2>
+                    <img src="../img/bolson_piedra1.jpg">
+                    <p class="producto-descripcion" >x m³</p> 
+                    <p class="producto-precio">$15205.00</p>                  
+                </li>
+
+                <li>
+                    <h2>Cemento</h2>
+                    <img src="../img/cemento1.jpg">
+                    <p class="producto-descripcion" >x 50kg</p> 
+                    <p class="producto-precio">$2600.00</p>                  
+                </li>
+
+                <li>
+                    <h2>Varillas de Hierro</h2>
+                    <img src="../img/hierro11.jpg">
+                    <p class="producto-descripcion" >x unidad</p> 
+                    <p class="producto-precio">$2118.00</p>                  
+                </li>
+
+                <li>
+                    <h2>Chapas</h2>
+                    <img src="../img/chapa1.jpg">
+                    <p class="producto-descripcion" >x m lineal</p> 
+                    <p class="producto-precio">$3700.00</p>                  
+                </li>
+            </ul>
+               
+            <section id="productos">
+                <div class="calculadora">
+                    <h3>Calcule los materiales para muro</h3>
+                    <label for="espesor">Espesor del muro (en cm):</label>
+                    <input type="number" id="espesor">
+                    <label for="largo">Largo del muro:</label>
+                    <input type="number" id="largo">
+                    <label for="alto">Alto del muro:</label>
+                    <input type="number" id="alto">
+                    <button onclick="calcularMateriales()">Calcular</button>
+                    <p id="resultadoMateriales"></p>
+                </div>
+
+                <div class="calculadora">
+                    <h3>Calcule los materiales para viga</h3>
+                    <label for="largo1">Largo de la viga en metros</label>
+                    <input type="number" id="largo1">
+                    <button onclick="calcularViga()">Calcular</button>
+                    <p id="resultadoMateriales1"></p>
+                </div>
+
+                <div class="calculadora">
+                    <h3>Calcule los materiales para columna</h3>
+                    <label for="largo2">Largo de la columna en metros</label>
+                    <input type="number" id="largo2">
+                    <button onclick="calcularColumna()">Calcular</button>
+                    <p id="resultadoMateriales2"></p>
+                </div>
+
+                <div class="calculadora">
+                    <h3>Calcule los materiales para contrapiso</h3>
+                    <label for="espesor1">Espesor (en cm)</label>
+                    <input type="number" id="espesor1">
+                    <label for="ancho">Ancho en metros</label>
+                    <input type="number" id="ancho">
+                    <label for="largo3">Largo en metros</label>
+                    <input type="number" id="largo3">
+                    <button onclick="calcularContrapiso()">Calcular</button>
+                    <p id="resultadoMateriales3"></p>
+                </div>
+
+                <div class="calculadora">
+                    <h3>Calcule los materiales para techo</h3>
+                    <label for="espesor2">Espesor (en cm)</label>
+                    <input type="number" id="espesor2">
+                    <label for="ancho1">Ancho en metros</label>
+                    <input type="number" id="ancho1">
+                    <label for="largo4">Largo en metros</label>
+                    <input type="number" id="largo4">
+                    <button onclick="calcularTecho()">Calcular</button>
+                    <p id="resultadoMateriales4"></p>
+                </div>                       
+            </section>
+        </main> 
+
+        <script src="../scripts/script.js"></script>
+
+        <footer>
+            <img src="../img/dedd650779734d6f98a72c947a365cad1.png">
+            <p class="copyright">&copy Copyright Daniela Delgado - 2023</p>
+            <a class="textoLink" href="https://www.linkedin.com/in/daniela-delgado-384896274/" target="_blank">Linkedin</a>
+            <a class="textoLink" href="https://github.com/silvia-daniela-delgado" target="_blank">GitHub</a>
+        </footer>
+    </body>
+</html>
